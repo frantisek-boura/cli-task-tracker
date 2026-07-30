@@ -1,4 +1,4 @@
-namespace clitracker.task;
+namespace CliTaskTracker.task;
 
 public class Task
 {
