@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace clitracker
+namespace clitracker;
+
+public class CliTaskTrackerApp 
 {
-    public class CliTaskTrackerApp 
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    } 
-}
+        Console.WriteLine("Hello World!");
+    }
+} 
