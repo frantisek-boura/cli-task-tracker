@@ -18,20 +18,31 @@ public class ActionArgsValidator : IActionArgsValidator
     /// <param name="args">The rest of CLI input arguments</param>
     /// <exception cref="InvalidActionArgumentException">User entered invalid action</exception>
     /// <exception cref="InvalidUserActionException">An undefined UserAction value is passed</exception>
-    /// <exception cref="IndexOutOfRangeException">User entered less than the required amount of arguments</exception>
-    /// <exception cref="FormatException">User entered invalid numerical argument(s)</exception>
+    /// <exception cref="NotEnoughActionArgumentsException">User entered less than the required amount of arguments</exception>
+    /// <exception cref="InvalidArgumentFormatException">User entered an incorrectly formatted argument</exception>
     public UserRequest ValidateActionArgs(UserAction userAction, params string[] args)
     {
-        return userAction switch
+        try
         {
-            UserAction.Create => new CreateRequest(args[0]),
-            UserAction.Update => new UpdateRequest(int.Parse(args[0]), args[1]),
-            UserAction.Delete => new DeleteRequest(int.Parse(args[0])),
-            UserAction.MarkDone => new MarkDoneRequest(int.Parse(args[0])),
-            UserAction.MarkInProgress => new MarkInProgressRequest(int.Parse(args[0])),
-            UserAction.List => ValidateListRequest(args),
-            _ => throw new InvalidUserActionException($"Invalid user action: ${userAction}")
-        };
+            return userAction switch
+            {
+                UserAction.Create => new CreateRequest(args[0]),
+                UserAction.Update => new UpdateRequest(int.Parse(args[0]), args[1]),
+                UserAction.Delete => new DeleteRequest(int.Parse(args[0])),
+                UserAction.MarkDone => new MarkDoneRequest(int.Parse(args[0])),
+                UserAction.MarkInProgress => new MarkInProgressRequest(int.Parse(args[0])),
+                UserAction.List => ValidateListRequest(args),
+                _ => throw new InvalidUserActionException($"Invalid user action: ${userAction}")
+            };
+        }
+        catch (IndexOutOfRangeException)
+        {
+            throw new NotEnoughActionArgumentsException($"Not enough argumenst entered for action ${userAction}");
+        }
+        catch (FormatException)
+        {
+            throw new InvalidArgumentFormatException($"Invalid argument format.");
+        }
     }
 
     private static ListRequest ValidateListRequest(params string[] args)
