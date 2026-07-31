@@ -1,6 +1,6 @@
-using CliTaskTracker.userinputhandler.UserRequests;
+using CliTaskTracker.UserInput.UserRequests;
 
-namespace CliTaskTracker.userinputhandler;
+namespace CliTaskTracker.UserInput;
 
 public interface IActionArgsValidator
 {

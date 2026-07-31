@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace CliTaskTracker.userinputhandler;
+namespace CliTaskTracker.UserInput;
 
 public enum UserAction
 {

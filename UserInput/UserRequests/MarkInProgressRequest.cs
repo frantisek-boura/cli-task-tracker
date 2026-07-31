@@ -1,10 +1,10 @@
-namespace CliTaskTracker.userinputhandler.UserRequests;
+namespace CliTaskTracker.UserInput.UserRequests;
 
-public class MarkDoneRequest : UserRequest
+public class MarkInProgressRequest : UserRequest
 {
     public int Id { get; set; }
 
-    public MarkDoneRequest(int id)
+    public MarkInProgressRequest(int id)
     {
         Action = UserAction.Delete;
         Id = id;

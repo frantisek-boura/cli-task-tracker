@@ -1,6 +1,6 @@
 using TaskStatus = CliTaskTracker.task.TaskStatus;
 
-namespace CliTaskTracker.userinputhandler.UserRequests;
+namespace CliTaskTracker.UserInput.UserRequests;
 
 using TaskStatus = CliTaskTracker.task.TaskStatus;
 

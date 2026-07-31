@@ -1,4 +1,4 @@
-namespace CliTaskTracker.userinputhandler.UserRequests;
+namespace CliTaskTracker.UserInput.UserRequests;
 
 public abstract class UserRequest 
 {

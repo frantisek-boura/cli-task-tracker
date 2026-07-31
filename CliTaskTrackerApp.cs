@@ -1,5 +1,5 @@
-﻿using CliTaskTracker.userinputhandler;
-using CliTaskTracker.userinputhandler.UserRequests;
+﻿using CliTaskTracker.UserInput;
+using CliTaskTracker.UserInput.UserRequests;
 
 namespace CliTaskTracker;
 

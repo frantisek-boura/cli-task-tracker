@@ -1,9 +1,9 @@
 using System.ComponentModel.Design;
 using System.Runtime.InteropServices.ComTypes;
-using CliTaskTracker.userinputhandler.UserRequests;
+using CliTaskTracker.UserInput.UserRequests;
 using TaskStatus = CliTaskTracker.task.TaskStatus;
 
-namespace CliTaskTracker.userinputhandler;
+namespace CliTaskTracker.UserInput;
 
 public class ActionArgsValidator : IActionArgsValidator
 {

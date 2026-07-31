@@ -1,4 +1,4 @@
-namespace CliTaskTracker.userinputhandler;
+namespace CliTaskTracker.UserInput;
 
 public class InvalidActionArgumentException : Exception
 {
