@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMethodBaseInvoker_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002Evar_003Fapp_003Fcom_002Ejetbrains_002ERider_003Fconfig_003FJetBrains_003FRider2026_002E2_003Fresharper_002Dhost_003FSourcesCache_003F344932e3a75911b8cabf3f77c583f5927ced24b21c873939d9acead319aba1_003FMethodBaseInvoker_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=413652D7_002DA4D2_002D4B29_002D8F2C_002DDC7D7B2740D6/@EntryIndexedValue">4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=MSTest/@EntryIndexedValue">d6790ab7-33c2-4425-b2c9-51480cd1a852</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0259a2bb_002D77e7_002D419b_002Db65a_002Dd9ecefac7ecf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetUserAction_add_CreateAction" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;MSTest::4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9::net10.0::CliTaskTracker.Tests.UserInput.UserActionValidatorTest&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9::net10.0::CliTaskTracker.Tests.UserInput.ActionArgsValidatorTest.ValidateActionArgs_createNoParams_Fails&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9::net10.0::CliTaskTracker.Tests.UserInput.ActionArgsValidatorTest.ValidateActionArgs_updateEmptyArgs_ThrowsInvalidArgumentFormatException&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9::net10.0::CliTaskTracker.Tests.UserInput.ActionArgsValidatorTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

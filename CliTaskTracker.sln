@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliTaskTracker", "CliTaskTracker.csproj", "{413652D7-A4D2-4B29-8F2C-DC7D7B2740D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliTaskTracker.Tests", "..\CliTaskTracker.Tests\CliTaskTracker.Tests.csproj", "{4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{413652D7-A4D2-4B29-8F2C-DC7D7B2740D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{413652D7-A4D2-4B29-8F2C-DC7D7B2740D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{413652D7-A4D2-4B29-8F2C-DC7D7B2740D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A61661C-6E1B-4F40-90ED-18DB7A9B8CE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
