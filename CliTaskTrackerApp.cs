@@ -1,4 +1,5 @@
 ﻿using CliTaskTracker.userinputhandler;
+using CliTaskTracker.userinputhandler.UserRequests;
 
 namespace CliTaskTracker;
 
@@ -8,11 +9,13 @@ public class CliTaskTrackerApp
     {
         try
         {
-            UserInputHandler userInputHandler = new UserInputHandler();
-            UserAction userAction = userInputHandler.GetUserAction(args[0]);
-            Console.WriteLine(userAction);
+            var userActionValidator = new UserActionValidator();
+            var actionArgsValidator = new ActionArgsValidator();
+            var userAction = userActionValidator.GetUserAction(args[0]);
+            var userRequest = actionArgsValidator.ValidateActionArgs(userAction, args.Skip(1).ToArray());
+            Console.WriteLine(userRequest.ToString());
         }
-        catch (InvalidUserActionException e)
+        catch (Exception e)
         {
             Console.WriteLine(e.Message);
         }

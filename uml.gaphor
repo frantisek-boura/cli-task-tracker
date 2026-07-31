@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<gaphor xmlns="https://gaphor.org/model" xmlns:Core="https://gaphor.org/modelinglanguage/Core" xmlns:UML="https://gaphor.org/modelinglanguage/UML" version="4" gaphor-version="3.3.2">
+<gaphor xmlns="https://gaphor.org/model" xmlns:Core="https://gaphor.org/modelinglanguage/Core" xmlns:UML="https://gaphor.org/modelinglanguage/UML" xmlns:general="https://gaphor.org/modelinglanguage/general" version="4" gaphor-version="3.3.2">
 <model>
 <Core:StyleSheet id="58d6989a-66f8-11ec-b4c8-0456e5e540ed">
 <styleSheet>
@@ -25,12 +25,27 @@ controlflow {
 <ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
 </reflist>
 </nestedPackage>
+<ownedDiagram>
+<reflist>
+<ref refid="e2542d39-8c44-11f1-a86c-59f9022f79ca"/>
+</reflist>
+</ownedDiagram>
+<ownedType>
+<reflist>
+<ref refid="45fea493-8c45-11f1-85db-59f9022f79ca"/>
+<ref refid="4885c385-8c45-11f1-b126-59f9022f79ca"/>
+<ref refid="55051574-8c45-11f1-bf47-59f9022f79ca"/>
+</reflist>
+</ownedType>
 <packagedElement>
 <reflist>
 <ref refid="a021290e-71b1-11ec-a409-f47b099bf663"/>
 <ref refid="c254a76c-71b1-11ec-a409-f47b099bf663"/>
 <ref refid="cccf183a-71b1-11ec-a409-f47b099bf663"/>
 <ref refid="f3a82730-71b1-11ec-a409-f47b099bf663"/>
+<ref refid="45fea493-8c45-11f1-85db-59f9022f79ca"/>
+<ref refid="4885c385-8c45-11f1-b126-59f9022f79ca"/>
+<ref refid="55051574-8c45-11f1-bf47-59f9022f79ca"/>
 </reflist>
 </packagedElement>
 </UML:Package>
@@ -426,5 +441,170 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="6203b92e-71b7-11ec-a409-f47b099bf663"/>
 </subject>
 </UML:CommentItem>
+<UML:ClassDiagram id="e2542d39-8c44-11f1-a86c-59f9022f79ca">
+<element>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</element>
+<name>
+<val>New Diagram</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="2b559cea-8c45-11f1-b682-59f9022f79ca"/>
+<ref refid="45ff6b25-8c45-11f1-86e8-59f9022f79ca"/>
+<ref refid="48866206-8c45-11f1-abf9-59f9022f79ca"/>
+<ref refid="4b5ca8fa-8c45-11f1-80d9-59f9022f79ca"/>
+<ref refid="55058711-8c45-11f1-b3be-59f9022f79ca"/>
+</reflist>
+</ownedPresentation>
+</UML:ClassDiagram>
+<general:Box id="2b559cea-8c45-11f1-b682-59f9022f79ca">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 374.99998474121094, 290.0)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>162.00001525878906</val>
+</width>
+<height>
+<val>50.0</val>
+</height>
+<diagram>
+<ref refid="e2542d39-8c44-11f1-a86c-59f9022f79ca"/>
+</diagram>
+<label>
+<val>clitasktrackerapp</val>
+</label>
+</general:Box>
+<UML:Class id="45fea493-8c45-11f1-85db-59f9022f79ca">
+<name>
+<val>Task</val>
+</name>
+<owningPackage>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</owningPackage>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="45ff6b25-8c45-11f1-86e8-59f9022f79ca"/>
+</reflist>
+</presentation>
+</UML:Class>
+<UML:ClassItem id="45ff6b25-8c45-11f1-86e8-59f9022f79ca">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 240.99998474121094, 539.0)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>100.0</val>
+</width>
+<height>
+<val>57.0</val>
+</height>
+<diagram>
+<ref refid="e2542d39-8c44-11f1-a86c-59f9022f79ca"/>
+</diagram>
+<subject>
+<ref refid="45fea493-8c45-11f1-85db-59f9022f79ca"/>
+</subject>
+</UML:ClassItem>
+<UML:Enumeration id="4885c385-8c45-11f1-b126-59f9022f79ca">
+<name>
+<val>TaskStatus</val>
+</name>
+<owningPackage>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</owningPackage>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="48866206-8c45-11f1-abf9-59f9022f79ca"/>
+</reflist>
+</presentation>
+</UML:Enumeration>
+<UML:EnumerationItem id="48866206-8c45-11f1-abf9-59f9022f79ca">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 50.99995040893555, 392.0)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>118.0</val>
+</width>
+<height>
+<val>99.0</val>
+</height>
+<diagram>
+<ref refid="e2542d39-8c44-11f1-a86c-59f9022f79ca"/>
+</diagram>
+<subject>
+<ref refid="4885c385-8c45-11f1-b126-59f9022f79ca"/>
+</subject>
+</UML:EnumerationItem>
+<general:Box id="4b5ca8fa-8c45-11f1-80d9-59f9022f79ca">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 240.99998474121094, 392.0)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>100.0</val>
+</width>
+<height>
+<val>50.0</val>
+</height>
+<diagram>
+<ref refid="e2542d39-8c44-11f1-a86c-59f9022f79ca"/>
+</diagram>
+<label>
+<val>tasks</val>
+</label>
+</general:Box>
+<UML:Class id="55051574-8c45-11f1-bf47-59f9022f79ca">
+<name>
+<val>CliTaskTrackerApp</val>
+</name>
+<owningPackage>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</owningPackage>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<presentation>
+<reflist>
+<ref refid="55058711-8c45-11f1-b3be-59f9022f79ca"/>
+</reflist>
+</presentation>
+</UML:Class>
+<UML:ClassItem id="55058711-8c45-11f1-b3be-59f9022f79ca">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 622.9999389648438, 286.5)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>150.0</val>
+</width>
+<height>
+<val>57.0</val>
+</height>
+<diagram>
+<ref refid="e2542d39-8c44-11f1-a86c-59f9022f79ca"/>
+</diagram>
+<subject>
+<ref refid="55051574-8c45-11f1-bf47-59f9022f79ca"/>
+</subject>
+</UML:ClassItem>
 </model>
 </gaphor>
