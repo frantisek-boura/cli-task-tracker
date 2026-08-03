@@ -1,4 +1,4 @@
-namespace CliTaskTracker.task;
+namespace CliTaskTracker.Task;
 
 public enum TaskStatus
 {

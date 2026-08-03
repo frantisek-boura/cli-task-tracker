@@ -1,8 +1,6 @@
-using TaskStatus = CliTaskTracker.task.TaskStatus;
-
 namespace CliTaskTracker.UserInput.UserRequests;
 
-using TaskStatus = CliTaskTracker.task.TaskStatus;
+using TaskStatus = CliTaskTracker.Task.TaskStatus;
 
 public class ListRequest : UserRequest
 {

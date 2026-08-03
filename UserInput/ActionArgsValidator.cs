@@ -1,7 +1,7 @@
 using System.ComponentModel.Design;
 using System.Runtime.InteropServices.ComTypes;
 using CliTaskTracker.UserInput.UserRequests;
-using TaskStatus = CliTaskTracker.task.TaskStatus;
+using TaskStatus = CliTaskTracker.Task.TaskStatus;
 
 namespace CliTaskTracker.UserInput;
 
