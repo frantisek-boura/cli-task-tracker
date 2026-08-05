@@ -1,8 +1,12 @@
+using CliTaskTracker.Task;
+
 namespace CliTaskTracker.UserInput.UserRequests;
+
+using Task = CliTaskTracker.Task.Task;
 
 public class DeleteRequest : UserRequest
 {
-    public int Id { get; set; }
+    public int Id { get; }
 
     public DeleteRequest(int id)
     {
@@ -10,9 +14,11 @@ public class DeleteRequest : UserRequest
         Id = id;
     }
 
-    public override void ExecuteRequest()
+    public override void ExecuteRequest(ITaskContext context)
     {
-        throw new NotImplementedException();
+        Task task = context.DeleteTask(Id);
+        
+        Console.WriteLine($"Successfully deleted task '{task.Description}' with ID {task.Id}");
     }
 
     public override string ToString()

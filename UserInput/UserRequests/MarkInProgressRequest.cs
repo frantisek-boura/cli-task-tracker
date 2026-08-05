@@ -1,8 +1,12 @@
+using CliTaskTracker.Task;
+
 namespace CliTaskTracker.UserInput.UserRequests;
+
+using Task = CliTaskTracker.Task.Task;
 
 public class MarkInProgressRequest : UserRequest
 {
-    public int Id { get; set; }
+    public int Id { get; }
 
     public MarkInProgressRequest(int id)
     {
@@ -10,9 +14,11 @@ public class MarkInProgressRequest : UserRequest
         Id = id;
     }
 
-    public override void ExecuteRequest()
+    public override void ExecuteRequest(ITaskContext context)
     {
-        throw new NotImplementedException();
+        Task task = context.MarkInProgress(Id);
+        
+        Console.WriteLine($"Successfully marked task with ID {task.Id} as In Progress");
     }
 
     public override string ToString()

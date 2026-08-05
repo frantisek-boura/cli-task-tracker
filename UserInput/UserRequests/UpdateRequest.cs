@@ -1,9 +1,13 @@
+using CliTaskTracker.Task;
+
 namespace CliTaskTracker.UserInput.UserRequests;
+
+using Task = CliTaskTracker.Task.Task;
 
 public class UpdateRequest : UserRequest
 {
-    public int Id { get; set; }
-    public string Description { get; set; }
+    public int Id { get; }
+    public string Description { get; }
 
     public UpdateRequest(int id, string description)
     {
@@ -12,9 +16,11 @@ public class UpdateRequest : UserRequest
         Description = description;
     }
 
-    public override void ExecuteRequest()
+    public override void ExecuteRequest(ITaskContext context)
     {
-        throw new NotImplementedException();
+        Task task = context.UpdateTask(Id, Description);
+        
+        Console.WriteLine($"Successfully updated task '{task.Description}' with ID {task.Id}");
     }
 
     public override string ToString()

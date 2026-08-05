@@ -1,8 +1,12 @@
+using CliTaskTracker.Task;
+
 namespace CliTaskTracker.UserInput.UserRequests;
+
+using Task = CliTaskTracker.Task.Task;
 
 public class MarkDoneRequest : UserRequest
 {
-    public int Id { get; set; }
+    public int Id { get; }
 
     public MarkDoneRequest(int id)
     {
@@ -10,9 +14,11 @@ public class MarkDoneRequest : UserRequest
         Id = id;
     }
 
-    public override void ExecuteRequest()
+    public override void ExecuteRequest(ITaskContext context)
     {
-        throw new NotImplementedException();
+        Task task = context.MarkDone(Id);
+        
+        Console.WriteLine($"Successfully marked task with ID {task.Id} as Done");
     }
 
     public override string ToString()
